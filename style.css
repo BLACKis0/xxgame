@@ -1,0 +1,162 @@
+@font-face {
+font-family: 'Titan One';
+src: url('fonts/TitanOne-Regular.ttf')  format('truetype');
+}
+
+*{
+	font-family: 'Titan One';
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#game {
+	height: 90vh;
+	width: 100%;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.x > div {
+	border: 1px solid #395772;
+  	-webkit-box-flex: 1;
+   	-ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+}
+
+.x {
+  	display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	width: 100%;
+	-webkit-box-flex: 1;
+   	-ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+}
+
+#score {
+	background-color: #acc1e2;
+	height: 10vh;
+	width: 100%;
+}
+
+.white {
+	background-color: white;
+}
+
+.red {
+	background-color: #395772;
+}
+
+.screen {
+	height: 100vh;
+	width: 100%;
+	background-color: #acc1e2;
+	background-image: url('img/bg.png');
+	position: fixed;
+	display: none;
+}
+
+.thebord {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.thebord > h1 {
+	margin: auto;
+	font-size: 100px;
+	text-align: center;
+	color: #395772;
+	text-shadow: 0px 0px 1px rgba(0,0,0,.6);
+}
+
+.dd {
+	margin: 5px auto; 
+	display: flex;
+}
+
+.dd > h3 {
+	text-align: center;
+	color: #395772;
+	text-shadow: 0px 0px 1px rgba(0,0,0,.6);
+	font-size: 25px;
+}
+
+.dd > span {
+	text-align: center;
+	color: #395772;
+	text-shadow: 0px 0px 1px rgba(0,0,0,.6);
+	line-height: 80px;
+	margin-left: 20px;
+	font-size: 25px;
+}
+
+.thebord > button {
+	height: 50px;
+	min-width: 100px;
+	background-color: #dbe0d0;
+	border: none;
+	color: white;
+	font-size: 20px;
+	text-shadow: 0px 0px 5px rgba(0,0,0,.8);
+	border-radius: 5px;
+	margin: 20px auto;
+	cursor: pointer;
+	padding: 10px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.3);
+}
+
+.display {
+	display: flex;
+}
+
+#countDwn {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	display: none;
+}
+
+#countDwn > span {
+	font-size: 150px;
+	color: #acc1e2;
+	margin: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,.7);
+}
+
+@media only screen and (max-width: 300px) {
+	
+	.thebord > h1 {
+		font-size: 80px;
+	}
+
+}
+
+@media only screen and (max-width: 233px) {
+	
+	.thebord > h1 {
+		font-size: 60px;
+	}
+
+	#countDwn > span {
+	font-size: 100px;
+	color: #acc1e2;
+	margin: auto;
+	text-shadow: 0px 0px 2px rgba(0,0,0,.7);
+	}
+
+}
+
